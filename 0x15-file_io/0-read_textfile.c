@@ -20,8 +20,8 @@ op = open(filename, O_RDONLY);
 if (op == -1)
 	return (0);
 gums = malloc(sizeof(char) * letters);
-w = write(STDOUT_FILENO, gums, r);
 r = read(op, gums, letters);
+w = write(STDOUT_FILENO, gums, r);
 
 free(gums);
 close(op);
