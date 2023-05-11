@@ -14,7 +14,7 @@ ssize_t op;
 ssize_t w;
 ssize_t r;
 
-op = open(filename, 0_RDONLY);
+op = open(filename, O_RDONLY);
 if (op == -1)
 	return (0);
 gums = malloc(sizeof(char) * letters);
